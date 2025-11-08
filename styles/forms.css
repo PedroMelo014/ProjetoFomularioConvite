@@ -73,13 +73,39 @@ input[type="date"] {
 
 .local {
   display: flex;
-  gap: 70px;
+  
 
 }
 
+.Endereco{ 
+  display: grid;
+
+  margin-left: 40px;
+}
+
+
+
+
+
 .opcoes {
+  justify-self: left;
   display: flex;
-  flex-direction: column;
+  border: 1px solid var(--input-placeholder);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+
+.opcoes input[type="radio"] { 
+display: none;
+}
+
+.opcoes label{ 
+  flex-grow: 1;
+  padding: 12px 20px; 
+  text-align: center;
+ 
+  width: 200px;
 }
 
 
@@ -103,6 +129,13 @@ display: flex;
 }
 
 
+.corprincipal{ 
+  color: var(--text-body);
+  display: inline-block;
+  margin-top: 20px;
+}
+
+
 .testeradio input {
   display: none;
 }
@@ -110,17 +143,19 @@ display: flex;
 
 .testeradio {
   display: flex;
-  gap: 46px
+  gap: 50px
 }
+
+
 
 .testeradio input[value="amarelo"] + label::before{ 
 
   content: '';
   width: 25px;
   height: 25px;
-  background-color: red;
+  background-color: #59B2FF;
   display: inline-block;
-  margin-right: 4px;
+  margin-right: 8px;
   border-radius: 50%;
   padding: 2px;
 }
@@ -131,12 +166,74 @@ display: flex;
   content: '';
   width: 25px;
   height: 25px;
-  background-color: blue;
+  background-color: #6A59FF;
   display: inline-block;
-  margin-right: 4px;
+  margin-right: 8px;
   border-radius: 50%;
   padding: 2px;
 }
+
+.testeradio input[value="color-3"] + label::before{ 
+
+  content: '';
+  width: 25px;
+  height: 25px;
+  background-color: #FF59F9;
+  display: inline-block;
+  margin-right: 8px;
+  border-radius: 50%;
+  padding: 2px;
+}
+
+.testeradio input[value="color-4"] + label::before{ 
+
+  content: '';
+  width: 25px;
+  height: 25px;
+  background-color: #FF5959;
+  display: inline-block;
+  margin-right: 8px;
+  border-radius: 50%;
+  padding: 2px;
+}
+
+.testeradio input[value="color-5"] + label::before{ 
+
+  content: '';
+  width: 25px;
+  height: 25px;
+  background-color: #FF8B59;
+  display: inline-block;
+  margin-right: 8px;
+  border-radius: 50%;
+  padding: 2px;
+}
+
+.testeradio input[value="color-6"] + label::before{ 
+
+  content: '';
+  width: 25px;
+  height: 25px;
+  background-color: #E1FF59;
+  display: inline-block;
+  margin-right: 8px;
+  border-radius: 50%;
+  padding: 2px;
+}
+
+
+.testeradio input[value="color-7"] + label::before{ 
+
+  content: '';
+  width: 25px;
+  height: 25px;
+  background-color: #59FF91;
+  display: inline-block;
+  margin-right: 8px;
+  border-radius: 50%;
+  padding: 2px;
+}
+
 
 .testeradio input:checked+label:before {
   border: solid 4px green;

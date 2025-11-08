@@ -1,0 +1,48 @@
+.tematitle p{ 
+  color: var(--text-body);
+}
+
+
+
+.container{ 
+  margin-top: 40px;
+  display:grid;
+   grid-template-columns: repeat(4 ,1fr);
+ gap: 10px;
+
+max-width: 560px;
+height: 360px;
+
+place-self: center;
+
+}
+
+
+.container  div{ 
+  border: solid 1px var(--input-placeholder);
+  width: 150px;
+  height: 103px;
+  border-radius: 12px;
+
+  img{
+    margin-top: 4px;
+    display: grid;
+    border-radius: 8px;
+   justify-self: center;
+
+   width: fill;
+   height: 64px;
+
+  }
+
+ span{ 
+  color: var(--text-body);
+
+  display: inline-block;
+  margin-top: 8px;
+margin-left: 30px;
+  
+  
+ }
+
+}
