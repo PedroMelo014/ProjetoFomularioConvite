@@ -18,11 +18,15 @@
 --shape-body: #212427; 
 --shape-button: #2D3136;
 --input-placeholder: #869198; 
+--pink: #FF598B; 
+
 
 }
 
 
 body{ 
-  background-color: var(--shape-button);
+  background-color: var(--shape-body);
+  font-family: var(--font-one);
 }
+
 

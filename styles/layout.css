@@ -18,16 +18,68 @@ aside{
     margin-right: auto;
   
   } 
+
+
+& .title{ 
+    display: flex;
+  align-items: center;
+  gap: .5rem;
+  margin-bottom: 1.5rem;
 }
+
+ & .back{ 
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+  margin-bottom: 1.5rem;
+ } 
+
+ 
+}
+
+
+
+
+
+/* 
+MAIN */
 
 main{ 
   padding: 2rem;
   
   & .main-container{
     max-width: 21rem ;
-    
-   
+  
   }
 
 }
+
+.headerimg{
+position: absolute;
+margin-left: 2rem;
+  img{ 
+    max-width: 3rem ;
+    margin-top: 2rem ;
+    margin-bottom: 1rem ;
+  }
+
+  h1{ 
+    color: var(--pink);
+    margin-bottom: .5rem ;
+  }
+
+  p{ 
+    color: var(--text-heading);
+  }
+}
+
+.background img { 
+max-width: 25rem ;
+max-height: 45rem;
+position: relative;
+z-index: -1;
+border-radius: .75rem ;
+
+}
+
 

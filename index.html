@@ -17,32 +17,136 @@
         <div id="app">
             <main>
                 <div class="main-container">
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Quae placeat eligendi, nostrum perferendis quasi,
-                        perspiciatis quia iste eius voluptas neque similique
-                        modi nihil adipisci laboriosam! Illum quibusdam commodi
-                        exercitationem aut.
-                    </p>
+                    <div class="headerimg">
+                        <img src="assets/Logo.svg" alt="" />
+
+                        <h1>Festivite</h1>
+                        <p>Crie um convite digital para seu evento</p>
+                    </div>
+
+                    <div class="background">
+                        <img src="assets/Background.png" alt="" />
+                    </div>
                 </div>
             </main>
 
             <aside>
                 <div class="aside-container">
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Repudiandae possimus, illo voluptas maiores sint
-                        asperiores sed iste blanditiis harum error perspiciatis
-                        dolor deserunt, velit distinctio laboriosam sit esse
-                        numquam deleniti?
-                    </p>
+                    <div class="title">
+                        <h3>Crie seu Evento</h3>
+                    </div>
+                    <div class="back">
+                        <img src="assets/calendar.svg" alt="" />
+                        <span>Sobre seu Evento</span>
+                    </div>
 
-                    <p>
-                        Lorem ipsum dolor sit, amet consectetur adipisicing
-                        elit. Adipisci veniam officia unde soluta accusantium
-                        facere omnis culpa magni earum. Vel nihil maiores eos
-                        sapiente tempora accusantium, fugiat beatae a repellat?
-                    </p>
+                    <form>
+                        <fieldset>
+                            <div class="input-wrapper">
+                                <label for="nameevent">Titulo</label>
+                                <input
+                                    type="text"
+                                    id="nameevent"
+                                    placeholder="Nome do Evento"
+                                />
+                            </div>
+
+                            <div class="input-date">
+                                <div class="campo">
+                                    <label for="inicio">Inicio</label
+                                    ><input
+                                        type="datetime"
+                                        id="inicio"
+                                        placeholder="DD/MM/AAAA, --:--"
+                                    />
+                                </div>
+
+                                <div class="input-date">
+                                    <div class="campo">
+                                        <label for="fim">Fim</label
+                                        ><input
+                                            type="datetime"
+                                            id="fim"
+                                            placeholder="DD/MM/AAAA, --:--"
+                                        />
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="local">
+                                <div></div>
+                                <label for="Tipo">Tipo</label>
+                                <div class="opcoes">
+                                    <input
+                                        type="radio"
+                                        id="presencial"
+                                        value="presencial"
+                                    />
+                                    <label for="presencial" class="opcoes"
+                                        >Presencial</label
+                                    >
+                                    <input
+                                        type="radio"
+                                        id="online"
+                                        name="tipo"
+                                        value="online"
+                                    />
+                                    <label for="online" class="opcoes">
+                                        Online
+                                    </label>
+                                </div>
+
+                                <div class="Endereco">
+                                    <label for="local">Local</label>
+                                    <input
+                                        type="text"
+                                        id="local"
+                                        placeholder="Endereco"
+                                    />
+                                </div>
+                            </div>
+
+                            <div class="descricao">
+                                <label for="descricao">Descricão</label>
+
+                                <textarea
+                                    name="descricao"
+                                    id="descricao"
+                                    cols="35"
+                                    rows="10"
+                                    placeholder="Escreva sobe os detalhes do evento"
+                                ></textarea>
+                            </div>
+
+                            <div class="Personalização">
+                                <img
+                                    src="assets/paintbrush-vertical.svg"
+                                    alt=""
+                                />
+                                <span>
+                                    <h2>Personalização</h2>
+                                </span>
+                            </div>
+
+                            <div class="testeradio">
+                                <input
+                                    type="radio"
+                                    name="cor"
+                                    value="amarelo"
+                                    id="color"
+                                />
+                                <label for="color"></label>
+
+                                <input
+                                    type="radio"
+                                    name="cor"
+                                    value="azul"
+                                    id="color-2"
+                                />
+                                <label for="color-2"></label>
+                            </div>
+                        </fieldset>
+                    </form>
                 </div>
             </aside>
         </div>
